@@ -22,7 +22,14 @@ body.boxed {
   color: #5b5b5b;
   padding-bottom: 10px;
 }
-span.check-me{
-  background-color:yellow ;
+
+span.check-me {
+  background-color: yellow;
   cursor: pointer;
+}
+
+.cover {
+  -webkit-box-shadow: 5px 5px 5px #AAA;
+  -moz-box-shadow: 5px 5px 5px #AAA;
+  box-shadow: 5px 5px 5px #AAA;
 }
