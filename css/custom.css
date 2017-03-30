@@ -1,0 +1,28 @@
+.text-overflow {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+body.boxed {
+  background-color: #F5F5F5 !important;
+}
+
+.boxed section {
+  opacity: 1 !important;
+}
+
+.row.search-header {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.widget-news a.search-item.message-item {
+  color: #5b5b5b;
+  padding-bottom: 10px;
+}
+span.check-me{
+  background-color:yellow ;
+  cursor: pointer;
+}
