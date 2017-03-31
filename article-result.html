@@ -40,7 +40,7 @@
                     <li><a href="#">配套图书</a></li>
                   </ul>
                 </div>
-                <input type="text" class="form-control" placeholder="请输入检索条件...">
+                <input type="text" class="form-control" placeholder="请输入标准号或标准名称" id="inputSearch">
                 <span class="input-group-btn">
                   <a class="btn btn-primary" href="standard-result.html" id="searchBtn">&nbsp;&nbsp;检索&nbsp;&nbsp;</a>
                 </span>
@@ -114,19 +114,6 @@
 </section>
 <script src="assets/plugins/jquery/jquery-1.11.1.min.js"></script>
 <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-<script>
-    $(function () {
-        $('#searchType').on('click', 'li', function () {
-            var $el = $(this);
-            $('#searchType').find('button').html($el.text() + '<span class="caret"></span>');
-
-            if ($el.text() === '标准规范') {
-                $('#searchBtn').attr('href', 'standard-result.html');
-            } else {
-                $('#searchBtn').parent().find('a.btn').attr('href', 'article-result.html');
-            }
-        });
-    });
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>
