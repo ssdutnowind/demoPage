@@ -9,10 +9,22 @@ $(function () {
             $('#inputSearch').attr('placeholder', '请输入标准号或标准名称');
         } else if (selText === '标准条文') {
             $('#searchBtn').attr('href', 'article-result.html');
-            $('#inputSearch').attr('placeholder', '请输入关键词1   关键词2');
-        } else {
+            $('#inputSearch').attr('placeholder', '轨道设计规范 施工');
+        } else if(selText === '资料分类'){
+            $('#searchBtn').attr('href', 'standard-category.html');
+            $('#inputSearch').attr('placeholder', '请输入分类名称');
+        }else {
             $('#searchBtn').attr('href', 'article-result.html');
             $('#inputSearch').attr('placeholder', '请输入图书名称');
         }
     });
+
+    $('.end_box ul li').each(function(){
+        $(this).hover(function() {
+            $(this).addClass('hover')
+        }, function() {
+            $(this).removeClass('hover')
+        });
+    })
+
 });
